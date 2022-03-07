@@ -1,0 +1,34 @@
+function Familia() {
+    return "Familia Córdoba";
+}
+
+function Personas(){
+    return "Cantidad de personas: "+6;
+}
+
+function Mascotas(){
+    var nombresMascotas = ["Lola", "Romeo", "Sara", "Ambar", "Timoteo"]; 
+    return "Cantidad de mascotas: "+nombresMascotas.length;
+    
+}
+
+function Integrantes(){
+    var personas = 6
+    var mascotas = 5
+    return "Total de integrantes: "+ (personas+mascotas);
+}
+
+
+function main(){
+    const a = Familia();
+    const b = Personas ();
+    const c = Mascotas ();
+    const d = Integrantes ();
+    
+    console.log (a);
+    console.log (b);
+    console.log (c);
+    console.log (d);
+}
+
+main ();
