@@ -1,0 +1,28 @@
+var ListaDeNumeros = [];
+const arr = [];
+
+
+for (indice = 0; indice < 40; indice++){
+    var NumerosRandom = Math.floor (Math.random ()*40);
+    ListaDeNumeros[indice] = NumerosRandom;
+};
+
+console.log (ListaDeNumeros);
+
+for (let ContadorUno = 0; ContadorUno < ListaDeNumeros.length; ContadorUno++) {
+     for (let ContadorDos = 0; ContadorDos < ListaDeNumeros.length; ContadorDos++) {
+         const NroMayor = ListaDeNumeros[ContadorDos] > ListaDeNumeros[ContadorDos+1];
+            if(NroMayor){
+                var aux = ListaDeNumeros[ContadorDos+1];
+                ListaDeNumeros[ContadorDos+1] = ListaDeNumeros[ContadorDos]; 
+                ListaDeNumeros[ContadorDos] = aux; 
+            };
+        };
+       
+        
+  
+
+
+};
+
+console.log (ListaDeNumeros);
