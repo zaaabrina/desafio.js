@@ -1,0 +1,32 @@
+function NrosPares (collection) {
+    const resultado = [];
+    for (let index = 0; index < collection.length; index++) {
+        const element = collection[index];
+        if (element.numero % 2 == 0) {
+            resultado.push (element);
+        }
+
+     }
+    return resultado;
+
+    
+}
+
+
+function main() {
+    const listaObjetos = [];
+    for (let index = 0; index < 20; index++) {
+        const numero = Math.ceil(Math.random ()*99);
+        listaObjetos.push({
+            numero: numero,
+            palabra: "palabra "+ numero,
+
+        });
+        
+    };
+    const SoloNrosPares = NrosPares (listaObjetos);
+    console.log (SoloNrosPares);
+    
+}
+
+main();
