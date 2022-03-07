@@ -1,0 +1,29 @@
+const listaDeNumeros = [];
+const NumerosImpares = [];
+const NumerosPares = [];
+var NumeroMenor = 10; 
+var NumeroMayor = 90;
+var CantNumerosImpares = 0;
+var CantNumerosPares = 0;
+
+for(var indice = 0; indice<87; indice++){
+    var NumerosRandom = Math.floor(Math.random()*(NumeroMayor-NumeroMenor) + NumeroMenor);
+    listaDeNumeros[indice] = NumerosRandom;
+
+    if(listaDeNumeros[indice]%2==0) {
+        CantNumerosPares++;
+        NumerosPares.push(listaDeNumeros[indice]);
+    }
+    else {
+        CantNumerosImpares++;
+        NumerosImpares.push(listaDeNumeros[indice]);
+    };
+
+};
+
+
+
+console.log (listaDeNumeros);
+console.log ("Total de Numeros:",listaDeNumeros.length);
+console.log ("Nros impares:",NumerosImpares.length);
+console.log ("Nros Pares:",NumerosPares.length);
